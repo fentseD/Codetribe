@@ -2,68 +2,101 @@
 <html>
 <head>
     <meta charset="UTF-8">
-   
+   	  <link href="style.css" rel="stylesheet">
+
 </head>
-<style>
-footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
 
-</style>
-<body style="background-color:grey";>
-<nav>
+<body>
+<header id="header" class="header">
+<div class="hero">
+<h1 class="logo"><a href="home.html">DOP</a></h1>
+<nav id="navbar" class="navbar" style="background-color:skyblue";>
 <ul>
- <li><a  href="index.html">Home</a></li>
- <li><a href="about.html">About Me</a></li>
- <li><a href="contact.html">Contact</a></li>
-
+<li><a  href="home.html">Home</a></li>
+<li><a href="about.html">About Me</a></li>
+<li><a href="contact.html">Contact Me</a></li>
+<li><class="getstarted" href="about.html"></a></li>
 </ul>
-<nav>
-<!-- ======= Contact Section ======= -->
+</nav>
+</div>
+</header>
+   <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
-      <div class="container">
+      <div class="container" data-aos="fade-up"">
 
-        
+    <div class=" section-title">
+       
+        <p>Contact Us</p>
+      </div>
 
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-6">
-            <div class="info-box mb-4">
-              <i class="bx bx-map"></i>
-              <h3>Our Address</h3>
-              <p>A05 Barracks <br>3rd Street,Wynberg,Alexndra,2090</p>
-            </div>
+      <div class="row">
+<div class="col-lg-6 ">
+		  <iframe class="mb-4 mb-lg-0"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.8048905248324!2d28.119188614527694!3d-26.105286966298035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9512a8901593f5%3A0x42dea040bfacb31d!2sAlex%20Mall.!5e0!3m2!1sen!2sza!4v1644786755587!5m2!1sen!2sza" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
           </div>
-		  <div class="col-lg-3 col-md-6">
-            <div class="info-box  mb-4">
-              <i class="bx bx-envelope"></i>
-              <h3>Email Us</h3>
-              <p>mashitisho564@gmail.com</p>
-            </div>
-          </div>
+        <div class="col-lg-6">
 
-          <div class="col-lg-3 col-md-6">
-            <div class="info-box  mb-4">
-              <i class="bx bx-phone-call"></i>
-              <h3>Call Us</h3>
-              <p>+27 678816664</p>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="info-box">
+                <i class="bx bx-map"></i>
+                <h3>Our Address</h3>
+                <p>A108 Wynberg Alexander</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-box mt-4">
+                <i class="bx bx-envelope"></i>
+                <h3>Email Us</h3>
+                <p>mashitisho564@gmail.com</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-box mt-4">
+                <i class="bx bx-phone-call"></i>
+                <h3>Call Us</h3>
+                <p>+27724338290<br>0678816664</p>
+              </div>
             </div>
           </div>
 
         </div>
-    <form id="contact-form" target="_self" method="post" action="URL_DO_SEU_BACKEND">
-        <input required placeholder="nome" type="text" name="name"><br/>
-        <input required placeholder="e-mail" type="email" name="email"><br/>
-        <input required placeholder="assunto" type="text" name="subject"><br/>
-        <textarea required 
-                  maxlength="2500" 
-                  placeholder="mensagem" 
-                  name="message" 
-                  rows='20'>
-        </textarea><br/>
-        <input type="submit">
-    </form>
+
+        <div class="col-lg-6 mt-4 mt-lg-0">
+          <form action="" method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+
+      </div>
+    </section>
+	<footer>
+	 <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>DOP</span></strong>. All Rights Reserved
+      </div>
+      
+    </div>
+	</footer>
 </body>
 </html>
